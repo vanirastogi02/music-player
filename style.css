@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url('images/musicbg.jpg'); */
+    font-family: 'Caveat', cursive;
+    /* height: 230vh; */
+    overflow-y:scroll; 
+}
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 4s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 3px #fff, 0 0 9px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 30px #e60073, 0 0 35px #e60073, 0 0 40px #e60073;
+    }
+
+    100% {
+        text-shadow: 0 0 3px #fff, 0 0 9px #ff4da6, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+    }
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    position: relative;
+    justify-self: center; 
+    align-self: center;
+    height: 200px;
+    width: 60%;
+    background-color: #ffcccc;
+    border-radius: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+.grid-item:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3), 0 5px 10px rgba(0,0,0,0.5);
+    transform: scale(1.02); 
+}
+.fixed-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 12.5%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+}
+.csize{
+    width:25%;
+    height:100%;
+    justify-content: left;
+    padding: 2px;
+}
+.bb{
+    width:25%;
+    height:96%;
+    justify-content: left;
+    background-color: black;
+    margin:4px;
+    border-radius: 4px;
+}
+.func{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* justify-content: center;
+    align-items: center; */
+    width:10%;
+    height:98%;
+    right:2px;
+    top:2px;
+    background-color: black;
+}
+.content{
+    position: absolute;
+    display: flex;
+    height:100%;
+    left: 330px;
+    top:74px;
+}
+h1{
+    font-size: 3em;
+    color: white;
+}
+.l{
+    left: 270px;
+}
+/* .white{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    filter: invert(100%);
+} */
+#play, #repeat ,#next {
+    font-size: 24px;
+    cursor: pointer;
+  }
+button{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 1px solid black;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+#size{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+    margin: 10px;
+}
+#playIcon {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+    margin: 10px;
+}
